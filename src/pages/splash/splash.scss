@@ -12,12 +12,39 @@ page-splash {
         background-size: auto 100%;
         background-position: center bottom;
         border-radius: 10px;
+				text-align: center;
 
         h1 {
-          font-family: 'Super Mario Bros';
+					font-family: '8BITWONDERNominal';
           text-align: center;
           font-size: 7vw;
+					color: white;
+					text-shadow: 8px 8px 1px black;
         }
+				button {
+					width: auto; 
+					padding: 40px;
+					background-color: transparent;
+					border: 0;
+					font-family: '8BITWONDERNominal';
+					font-size: 40px;
+					color: white;
+					text-shadow: 5px 5px 1px black;
+					margin-top: 300px;
+				}
+				footer {
+					position: absolute;
+					bottom: 0px;
+					left: 0px;
+					padding: 100px;
+					padding-bottom: 75px;
+					width: 100%;
+					text-align: center;
+					font-size: 45px; 
+					color: #16ecfa;
+					text-shadow: 4px 4px 1px black;
+					font-family: '8BITWONDERNominal';
+				}
       }
     }
 
