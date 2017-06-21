@@ -3,14 +3,21 @@ page-splash {
     background-image: url('../assets/title_bg.png');
 
     div {
-      padding: 50px;
+      padding: 50px !important;
 
       div {
         height: 100%;
         width: 100%;
         background-image: url('../assets/title_fg.jpg');
         background-size: auto 100%;
+        background-position: center bottom;
         border-radius: 10px;
+
+        h1 {
+          font-family: 'Super Mario Bros';
+          text-align: center;
+          font-size: 7vw;
+        }
       }
     }
 
