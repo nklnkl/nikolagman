@@ -29,7 +29,7 @@ import { MenuPage } from '../pages/menu/menu';
   ],
   providers: [
     StatusBar,
-    SplashScreen,
+		SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
