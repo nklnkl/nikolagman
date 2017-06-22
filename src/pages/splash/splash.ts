@@ -15,11 +15,19 @@ import { MenuPage } from '../menu/menu';
 })
 export class SplashPage {
 	private menuPage = MenuPage;
+  private audio: HTMLAudioElement;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SplashPage');
+    this.audio = new Audio('../assets/splash.mp3');
   }
+  ionViewDidEnter () {
+    this.audio.play();
+  }
+	ionViewWillLeave () {
+    this.audio.pause();
+	}
 
 }

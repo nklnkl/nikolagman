@@ -13,16 +13,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MenuPage {
 
+  private audio: HTMLAudioElement;
+
 	constructor(public navCtrl: NavController, public navParams: NavParams ) {
   }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad MenuPage');
-	}
-	ionViewDidEnter () {
-					//		document.getElementById("menuBg").play();
-	}
+    this.audio = new Audio('../assets/menu.mp3');
+  }
+  ionViewDidEnter () {
+    this.audio.play();
+  }
 	ionViewWillLeave () {
-	}
-	ionViewWillUnload () {
+    this.audio.pause();
 	}
 }
