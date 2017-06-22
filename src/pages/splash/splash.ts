@@ -21,7 +21,8 @@ export class SplashPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SplashPage');
-    this.audio = new Audio('../assets/splash.mp3');
+		this.audio = new Audio('http://163.238.35.166/~lagman/media/splash.mp3');
+		this.audio.loop = true;
   }
   ionViewDidEnter () {
     this.audio.play();

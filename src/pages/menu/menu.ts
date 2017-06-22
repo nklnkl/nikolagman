@@ -20,7 +20,7 @@ export class MenuPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MenuPage');
-		this.audio = new Audio('../assets/menu.mp3');
+		this.audio = new Audio('http://163.238.35.166/~lagman/media/menu.mp3');
 		this.audio.loop = true;
   }
   ionViewDidEnter () {
