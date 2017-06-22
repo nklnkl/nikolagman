@@ -1,3 +1,27 @@
 page-menu {
+	ion-content {
+		background-image: url('../assets/menu_bg.gif');
+		> div {	
+			text-align: center;
 
+			> ul {
+				display: inline-block;
+				color: #14004b;
+				width: 400px; 
+				text-align: center;
+				margin-top: 25vw;
+
+				> li {
+					background-color: #909090;
+					margin-bottom: 20px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					margin-bottom: 20px;
+					font-size: 30px;
+					font-weight: bold;
+					text-align: center;
+				}
+			}
+		}
+	}
 }
