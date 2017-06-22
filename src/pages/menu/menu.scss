@@ -9,7 +9,8 @@ page-menu {
 				color: #14004b;
 				width: 400px; 
 				text-align: center;
-				margin-top: 25vw;
+				margin-top: 35vh;
+				padding: 0;
 
 				> li {
 					background-color: #909090;
@@ -20,6 +21,25 @@ page-menu {
 					font-size: 30px;
 					font-weight: bold;
 					text-align: center;
+					box-shadow: inset -20px 0px 40px black;
+					border-radius: 5px;
+					img:nth-child(1) {
+						display: none;
+						position: relative;
+						right: 160px;
+						width: auto;
+						height: 25px;
+					}
+					img:nth-child(2) {
+						display: none;
+						position: relative;
+						left: 160px;
+						width: auto;
+						height: 25px;
+					}
+				}
+				> li:hover img {
+					display: inline-block;
 				}
 			}
 		}
