@@ -21,3 +21,19 @@
   font-weight: normal;
   src: local('Super Mario Bros.'), url('../assets/supermariobros.woff') format('woff');
 }
+
+ion-nav {
+  background-color: black;
+}
+ion-content {
+  animation: linear 1s;
+}
+// Used to fade out ion-content tags.
+@keyframes fadeAnimation {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+.fadeContent {
+  animation: fadeAnimation;
+  animation-duration: 1.1s;
+}

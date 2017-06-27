@@ -1,10 +1,10 @@
-<ion-content padding>
+<ion-content padding [ngClass]="{fadeContent: leaving}">
   <div>
     <h1>
 			niko's
 		</h1>
     <h1>homepage</h1>
-    <button [navPush]="menuPage">
+    <button (click)="enterMenu()" (mouseover)="hoverButton()">
 			click here to enter
     </button>
 	<footer>
