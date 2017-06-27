@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ProjectsPage } from '../projects/projects';
+import { AboutPage } from '../about/about';
+import { ContactPage } from '../contact/contact';
 /**
  * Generated class for the MenuPage page.
  *
@@ -45,13 +48,37 @@ export class MenuPage {
   private openProjects() : void {
     this.selectAudio.play();
     this.leaving = true;
+    new Promise((resolve, reject) => {
+			setTimeout(() => {
+				resolve();
+			}, 1000);
+		})
+		.then(() => {
+			this.navCtrl.push(ProjectsPage);
+		});
   }
   private openAbout () : void {
     this.selectAudio.play();
     this.leaving = true;
+    new Promise((resolve, reject) => {
+			setTimeout(() => {
+				resolve();
+			}, 1000);
+		})
+		.then(() => {
+			this.navCtrl.push(AboutPage);
+		});
   }
   private openContact () : void {
     this.selectAudio.play();
     this.leaving = true;
+    new Promise((resolve, reject) => {
+			setTimeout(() => {
+				resolve();
+			}, 1000);
+		})
+		.then(() => {
+			this.navCtrl.push(ContactPage);
+		});
   }
 }
