@@ -1,17 +1,30 @@
+@keyframes arwingFlip {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1, -1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
 page-menu {
 	ion-content {
 		background-image: url('../assets/menu_bg.gif');
-		> div {	
+		> div {
 			text-align: center;
 
 			> ul {
 				display: inline-block;
 				color: #14004b;
-				width: 400px; 
+				width: 400px;
 				text-align: center;
 				margin-top: 35vh;
 				padding: 0;
-
+				> li:hover {
+					cursor: pointer;
+				}
 				> li {
 					background-color: #909090;
 					margin-bottom: 20px;
@@ -27,15 +40,25 @@ page-menu {
 						display: none;
 						position: relative;
 						right: 160px;
-						width: auto;
+						width: 65px;
 						height: 25px;
+						animation-name: arwingFlip;
+						animation-direction: normal;
+						animation-duration: 4s;
+						animation-iteration-count: infinite;
+						animation-timing-function: linear;
 					}
 					img:nth-child(2) {
 						display: none;
 						position: relative;
 						left: 160px;
-						width: auto;
+						width: 65px;
 						height: 25px;
+						animation-name: arwingFlip;
+						animation-direction: normal;
+						animation-duration: 4s;
+						animation-iteration-count: infinite;
+						animation-timing-function: linear;
 					}
 				}
 				> li:hover img {
