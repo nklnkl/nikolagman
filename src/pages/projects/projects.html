@@ -14,5 +14,46 @@
 
 
 <ion-content padding>
+	<ion-grid>
 
+		<ion-row class="map-select-title">
+      <div>
+        <h1>map select</h1>
+      </div>
+		</ion-row>
+
+		<ion-row id="cups">
+			<ion-col col-3></ion-col>
+			<ion-col col-3></ion-col>
+			<ion-col col-3></ion-col>
+			<ion-col col-3></ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col col-6 id="map-previews">
+        <div id="luigi" *ngIf="preview == 1"></div>
+        <div id="moo" *ngIf="preview == 2"></div>
+        <div id="koopa" *ngIf="preview == 3"></div>
+        <div id="kalimari" *ngIf="preview == 4"></div>
+      </ion-col>
+
+			<ion-col col-6>
+				<ul id="map-buttons">
+					<li (mouseover)="changePreview(1)" (click)="openProject(1)">
+            <span>Project #1 (Homepage)</span>
+          </li>
+					<li (mouseover)="changePreview(2)" (click)="openProject(2)">
+            <span>Project #2 (Reverse)</span>
+          </li>
+					<li (mouseover)="changePreview(3)" (click)="openProject(3)">
+            <span>Project #3 (TBA)</span>
+          </li>
+					<li (mouseover)="changePreview(4)" (click)="openProject(4)">
+            <span>Final Project (TBA)</span>
+          </li>
+				</ul>
+			</ion-col>
+		</ion-row>
+
+	</ion-grid>
 </ion-content>

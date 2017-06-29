@@ -1,3 +1,66 @@
 page-projects {
-
+  > ion-content {
+    background-image: url('http://163.238.35.166/~lagman/media/nikolagman/projects/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .map-select-title {
+    text-align: center;
+    > div {
+      display: inline-block;
+      background-color: black;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+      > h1 {
+        font-size: 65px;
+        font-family: 'Super Mario 256';
+        background: -webkit-linear-gradient(#a6fff4, #fad01a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+      }
+    }
+  }
+  #map-previews > div {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #map-previews > #luigi {
+    background-image: url('http://163.238.35.166/~lagman/media/nikolagman/projects/luigi-raceway.png');
+  }
+  #map-previews > #moo {
+    background-image: url('http://163.238.35.166/~lagman/media/nikolagman/projects/moo-moo-farm.png');
+  }
+  #map-previews > #koopa {
+    background-image: url('http://163.238.35.166/~lagman/media/nikolagman/projects/koopa-troopa-beach.png');
+  }
+  #map-previews > #kalimari {
+    background-image: url('http://163.238.35.166/~lagman/media/nikolagman/projects/kalimari-desert.png');
+  }
+  #map-buttons {
+    list-style-type: none;
+    > li {
+      background-color: black;
+      text-align: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    > li:hover {
+      background-color: lightgrey;
+      cursor: pointer;
+    }
+    > li > span {
+      background: -webkit-linear-gradient(#0f0, #fafd1a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: bold;
+      padding-top: 5px;
+    }
+  }
 }

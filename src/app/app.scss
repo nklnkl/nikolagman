@@ -22,6 +22,11 @@
   src: local('Super Mario Bros.'), url('../assets/supermariobros.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Super Mario 256';
+    src: url('http://163.238.35.166/~lagman/media/super-mario-256.ttf');
+}
+
 ion-nav {
   background-color: black;
 }
