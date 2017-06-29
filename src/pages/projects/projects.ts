@@ -56,6 +56,7 @@ export class ProjectsPage {
         break;
       case 2:
         window.open('http://163.238.35.166/~lagman/reverse/');
+				break;
       case 3:
         this.alertCtrl.create({
           title: 'Not yet available!',
