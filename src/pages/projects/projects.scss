@@ -3,6 +3,36 @@ page-projects {
     background-image: url('http://163.238.35.166/~lagman/media/nikolagman/projects/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+		
+		ion-grid {
+			#cups {
+				> ion-col {
+					text-align: center;
+					padding-left: 10px;
+					padding-right: 10px;
+
+					> div {
+						padding-top: 10px;
+						padding-bottom: 10px;
+						background-color: black;
+						* {
+						}
+						img {
+							width: 60px;
+							height: 60px;
+							display: inline-block;
+						}
+						span {
+							color: #b044cd;
+							font-size: 20px;
+							font-weight: bold;
+							text-transform: uppercase;
+							display: block;
+						}
+					}
+				}
+			}
+		}
   }
   .map-select-title {
     text-align: center;
