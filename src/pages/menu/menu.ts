@@ -3,12 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProjectsPage } from '../projects/projects';
 import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
-/**
- * Generated class for the MenuPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+
 @IonicPage()
 @Component({
   selector: 'page-menu',
