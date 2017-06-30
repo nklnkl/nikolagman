@@ -37,7 +37,10 @@ export class ProjectsPage {
     this.backgroundAudio.play();
     this.preview = 1;
     return;
-  }
+	}
+	ionViewWillLeave () : void {
+		this.backgroundAudio.pause();
+	}
 
   private changePreview(i: number) : void {
     this.preview = i;
