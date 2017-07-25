@@ -62,11 +62,10 @@ export class ProjectsPage {
         }).present();
         break;
       case 4:
-        this.alertCtrl.create({
-          title: 'Not yet available!',
-          subTitle: 'This level has not been unlocked yet.',
-          buttons: ['Oh, darn it!']
-        }).present();
+        window.open('http://163.238.35.166/~lagman/project1/');
+        break;
+      case 5:
+        window.open('http://163.238.35.166/~lagman/project1/');
         break;
       default:
     }
